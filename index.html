@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1 class="bg-primary text-white text-center">
+          Weather Dashboard
+        </h1>
+    </header>
+  <div class="row">
+    <section class="col-2">
+      <div class="container" style="margin-top: 50px">
+        <div >
+            <h1 >
+                Search for a City:
+            </h1>
+          <input type="text" name="Enter City" id="selected-city">
+          <button id="search-btn" class="btn btn-primary" type="submit">Search</button>
+        </div>
+      </div>
+      <div class="row">
+        <ul id="city-select">
+          <button id="austin" class="btn btn-secondary selectedCity">Austin</button>
+          <button id="chicago" class="btn btn-secondary selectedCity" >Chicago</button>
+          <button id="newYork" class="btn btn-secondary selectedCity">New York</button>
+          <button id="orlando" class="btn btn-secondary selectedCity">Orlando</button>
+          <button id="sanFrancisco" class="btn btn-secondary selectedCity">San Francisco</button>
+          <button id="seattle" class="btn btn-secondary selectedCity">Seattle</button>
+          <button id="denver" class="btn btn-secondary selectedCity">Denver</button>
+          <button id="atlanta" class="btn btn-secondary selectedCity">Atlanta</button>
+        </ul>
+      </div>
+    </section>
+    <section class="col">
+      <div class="jumbotron" id="">
+        <h1 id="currentLocation"></h1>
+        <p id="date"></p>
+        <img id="icon">Current Conditions</img>
+        <p id="temperature"></p>
+        <p id="humidity"></p>
+        <p id="windSpeed"></p>
+        <p id="uvIndex"></p>
+      </div>
+      <section class="">
+        <div class="" id="">
+          <h2 class="content-subhead">Weather for the Week</h2>
+          <div id="display-weather">
+        </div>
+      </section>
+      <div class="row" id="five-forcast"></div>
+    </section>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
