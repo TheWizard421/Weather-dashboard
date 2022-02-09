@@ -4,7 +4,7 @@ var selectedCity = document.querySelector("#selected-city")
 
 
 var getWeatherData = function(weather) {
-fetch("http://api.openweathermap.org/data/2.5/weather?q=" + weather + "&units=imperial&appid=d3f5af43f561d831f34569cf6fef321f")
+fetch("https://api.openweathermap.org/data/2.5/weather?q=" + weather + "&units=imperial&appid=d3f5af43f561d831f34569cf6fef321f")
     .then(function(response) {
         return response.json();
     })
